@@ -1,0 +1,233 @@
+/*CSS Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 10px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 82%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo{
+    margin: 10px 8px;
+}
+
+#logo img{
+    margin: 4px 8px;
+    height: 73px;
+}
+
+/*Navugation bar list styling*/
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /*color: white;*/
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 13px;
+    display: block;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 20px;
+    height: 529px;
+}
+
+#home::before{
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    font-size: 3.8rem;
+    text-align: center;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+    margin-top: 0px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 12px;
+    margin-top: 5px;
+    border-radius: 21px;
+    background-color: #f4efef;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/*Client Section*/
+#client-section{
+    position: relative;
+    height: 345px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#client-section .h-primary{
+    font-size: 3.8rem;
+    padding: 18px;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+.client-item{
+    padding: 20px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg');
+    height: 345px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*Contact section*/
+#contact .h-primary{
+    font-size: 3.8rem;
+    padding: 18px;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(../contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+/*Utitlity Class*/
+h1#our{
+    font-size: 3.8rem;
+    padding: 18px;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 18px;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+.btn{
+    padding: 3px 13px;
+    margin: 12px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor:  pointer;
+}
+
+.btn:hover{
+    color: rgb(212, 205, 205);
+    background-color: rgb(196, 50, 50);
+}
+
+.center{
+    text-align: center;
+}
+
